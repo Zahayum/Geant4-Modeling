@@ -1,0 +1,8 @@
+# Initialization macro for interactive visualization
+
+# Загружаем визуализацию
+/control/execute vis.mac
+
+# Запускаем интерфейс (OGL + UI)
+#/vis/open OGL 600x600-0+0
+#/control/execute run.mac

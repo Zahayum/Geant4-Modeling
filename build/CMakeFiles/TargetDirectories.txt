@@ -1,0 +1,3 @@
+/home/zahayum/g4install/projects/ty-1/build/CMakeFiles/main.dir
+/home/zahayum/g4install/projects/ty-1/build/CMakeFiles/edit_cache.dir
+/home/zahayum/g4install/projects/ty-1/build/CMakeFiles/rebuild_cache.dir
