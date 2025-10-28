@@ -1,0 +1,34 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Geant4 (ty-1)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/main",
+            "args": ["init_vis.mac"],
+            "cwd": "${workspaceFolder}/build",
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "preLaunchTask": "build",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "environment": [
+                {
+                    "name": "GEANT4_DIR",
+                    "value": "/home/zahayum/g4install/lib/Geant4-11.2.0"
+                },
+                {
+                    "name": "LD_LIBRARY_PATH",
+                    "value": "/home/zahayum/g4install/lib:${env:LD_LIBRARY_PATH}"
+                }
+            ]
+        }
+    ]
+}

@@ -1,6 +1,0 @@
-/vis/open OGL 800x800-0+0
-/vis/viewer/set/autoRefresh true
-/vis/drawVolume
-/vis/scene/add/axes 0 0 0 1 m
-/vis/scene/add/trajectories
-/vis/viewer/flush
