@@ -1,42 +1,59 @@
-# Prerequisites
-*.d
+# === Системные файлы ===
+.DS_Store
+Thumbs.db
 
-# Compiled Object files
-*.slo
-*.lo
+# === Каталоги сборки ===
+build/
+build*/
+bin/
+lib/
+
+# === CMake ===
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# === Исполняемые и объектные файлы ===
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
 *.so
-*.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
+*.dylib
 *.a
 *.lib
-
-# Executables
-*.exe
 *.out
-*.app
+*.exe
+*.bin
 
-# debug information files
-*.dwo
-build/
+# === Geant4 output / simulation data ===
+*.root
+*.csv
+*.dat
+*.txt
+*.log
+*.xml
+
+# === Временные макросы и результаты ===
+run/
+vis/
+output/
+data/
+tmp/
+
+# === Python cache ===
+__pycache__/
+*.pyc
+
+# === IDE / редакторы ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === Документы / шаблоны / временные файлы ===
+templates/
+*.bak
+*.swp
+*.tmp
+
