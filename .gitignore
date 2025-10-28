@@ -1,6 +1,14 @@
-# === Компиляция / CMake ===
+# === Системные файлы ===
+.DS_Store
+Thumbs.db
+
+# === Каталоги сборки ===
 build/
-cmake-build-*/
+build*/
+bin/
+lib/
+
+# === CMake ===
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
@@ -8,38 +16,44 @@ Makefile
 compile_commands.json
 
 # === Исполняемые и объектные файлы ===
-*.out
 *.o
 *.obj
-*.exe
-*.dll
 *.so
+*.dll
 *.dylib
 *.a
 *.lib
+*.out
+*.exe
 *.bin
 
-# === Visual Studio Code ===
-.vscode/
-*.code-workspace
-
-# === IDE и другие системы ===
-.idea/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-# === Системные файлы ===
-.DS_Store
-Thumbs.db
-
-# === Логи и временные файлы ===
+# === Geant4 output / simulation data ===
+*.root
+*.csv
+*.dat
+*.txt
 *.log
-*.tmp
-*.bak
+*.xml
 
-# === Кэш Python (если вдруг используешь скрипты) ===
+# === Временные макросы и результаты ===
+run/
+vis/
+output/
+data/
+tmp/
+
+# === Python cache ===
 __pycache__/
 *.pyc
+
+# === IDE / редакторы ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === Документы / шаблоны / временные файлы ===
+templates/
+*.bak
+*.swp
+*.tmp
 
